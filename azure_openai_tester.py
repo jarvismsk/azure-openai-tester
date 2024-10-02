@@ -1,24 +1,9 @@
-import os
 import requests
-from dotenv import load_dotenv
-
-load_dotenv()
-
-def get_azure_credentials():
-    """Retrieve Azure OpenAI credentials from environment variables."""
-    endpoint = os.getenv('AZURE_OPENAI_ENDPOINT')
-    api_key = os.getenv('AZURE_OPENAI_KEY')
-    
-    if not endpoint or not api_key:
-        print("Error: Azure OpenAI credentials not found.")
-        print("Please ensure AZURE_OPENAI_ENDPOINT and AZURE_OPENAI_KEY are set in your .env file.")
-        exit(1)
-    
-    return endpoint, api_key
 
 def send_azure_request(messages, model):
     """Send a request to Azure OpenAI and return the response."""
-    endpoint, api_key = get_azure_credentials()
+    endpoint = 'ENTER AZURE_OPENAI_ENDPOINT'
+    api_key = 'AZURE_OPENAI_KEY'
     
     headers = {'Content-Type': 'application/json', 'api-key': api_key}
     payload = {'messages': messages, 'model': model}
