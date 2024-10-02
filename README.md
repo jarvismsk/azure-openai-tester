@@ -5,7 +5,6 @@ This command-line application allows you to test your Azure OpenAI connection an
 ## Features
 
 - Test Azure OpenAI API connectivity
-- Interact with different Azure OpenAI models
 - Simple command-line interface
 
 ## Prerequisites
