@@ -1,6 +1,6 @@
 # Azure OpenAI Terminal Tester
 
-This command-line application allows you to test your Azure OpenAI connection and interact with various models through a simple terminal interface.
+This command-line application allows you to test your Azure OpenAI connection and interact with models through a simple terminal interface.
 
 ## Features
 
